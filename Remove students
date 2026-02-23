@@ -1,0 +1,16 @@
+def remove_student(student_name, students_list):
+    # Format the name exactly like your original logic
+    rem_student = " ".join(student_name.split()).title()
+    
+    for student in students_list:
+        if student["name"] == rem_student:
+            students_list.remove(student)
+            return True # Return True so the caller knows it worked
+    return False # Return False if not found
+
+ This is the "UI" part that stays in your main loop
+ raw_name = input("What is the students name to remove? ")
+ if remove_student(raw_name, students):
+     print("Student removed successfully!")
+ else:
+     print("Student not found")
