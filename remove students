@@ -1,0 +1,12 @@
+def remove_student(students): 
+    raw_name = input("What is the students name to remove? ").strip()
+    # This formats ' jOHN  dOE ' into 'John Doe'
+    rem_student = " ".join(raw_name.split()).title()
+    
+    for student in students:
+        if student["name"] == rem_student:
+            students.remove(student)
+            print("Student removed successfully!")
+            return # Exit immediately once found
+            
+    print("Student not found")
