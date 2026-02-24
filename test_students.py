@@ -1,4 +1,4 @@
-from your_script_name import remove_student # Replace 'your_script_name' with your actual filename
+from students import remove_student # Replace 'your_script_name' with your actual filename
 
 def test_remove_student_success():
     # Setup a mock list
